@@ -1,0 +1,54 @@
+h1 {
+    font-family: serif;
+    color: brown;
+    font-size: 300%;
+    font-style: italic;
+}
+h2 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: chocolate;
+    font-size: 150%;
+    font-style: oblique;
+}
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 150%;
+    font-style: normal;
+}
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: crimson;
+    font-size: 18px;
+    font-style: normal;
+}
+dt {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font:bold;
+    font-size: 3cap;
+    font-style: italic;
+}
+dd {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: darkblue;
+    font-size: 2.5ch;
+    font-style: oblique;
+}
+button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#First_header {
+    font-family: cursive;
+    color: #04AA6D;
+    font-size: 5cqb;
+}
