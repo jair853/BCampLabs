@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html-Forms</title>
+    <style>
+        .form1 {
+            border: inset;
+            padding: 10px;
+            width: 400px;
+            border-color: indianred;
+        }
+        .form2 {
+            padding: 10px;
+            border-color: brown;
+            border:solid;
+        }
+        h1 {
+            padding-top:10px;
+            padding-bottom: 10px;
+        }
+        input {
+            background-color: aliceblue;
+        }
+        fieldset {
+            border-color: azure;
+            background-color: bisque;
+        }
+        legend {
+            border: ridge;
+            background-color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif;
+            font:bold;
+        }
+        select {
+            border: inset;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario básico HTML</h1>
+    <form class="form1" action="">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" style="margin-left: 70px;" required><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" style="margin-left: 66px;"><br><br>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" name="email" placeholder="example@dominio.com"><br><br>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" name="contraseña" id="cont1" style="margin-left: 50px;" pattern="[a-z A-Z0-9!#$%.,-_]" minlength="10" required><br><br>
+        <input type="submit" value="enviar" style="margin-left: 20px;">
+        <input type="reset" value="borrar" style="margin-left: 40px;">
+    </form>
+    <hr>
+    <form class="form2" action="">
+        <h1>Formulario agrupado</h1>
+        <fieldset>
+            <legend>
+                Datos para el pedido
+            </legend>
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" required style="margin-left: 95px;" pattern=""><br><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" required style="margin-left: 92px;" maxlength="15"><br><br>
+            <label for="fnacim">Fecha de nacimiento:</label>
+            <input type="date" name="fnacim" id="fn1" required style="margin-left: 16px;"><br><br>
+            <label for="dir">Dirección de envio:</label>
+            <input type="text" name="dir" id="dir1" required style="margin-left: 27px;"><br><br>
+            <label for="tel">Número de Teléfono:</label>
+            <input type="tel" name="tel" id="tel1" minlength="10" style="margin-left: 17px;"><br><br>
+            <label for="producto">Seleccione su producto:</label>
+            <select name="producto" id="productos">
+                <option value="">seleccione un sabor</option>
+                <option value="vainilla">Torta de vainilla</option>
+                <option value="naranja">Torta de naranja</option>
+                <option value="chocolate">Torta de chocolate</option>
+                <option value="arequipe">Torta de arequipe</option>
+            </select><br><br>
+            <input type="submit" value="enviar">
+            <input type="reset" value="borrar">
+        </fieldset>
+    </form>
+</body>
+</html>

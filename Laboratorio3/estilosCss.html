@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos con CSS</title>
+    <link rel="stylesheet" href="styles/style2.css">
+</head>
+<body>
+    <header>
+        <h1>
+           Estilos con CSS
+        </h1>
+    </header>
+    <section>
+        <div class="header1">
+            <table>
+                <thead>
+                    <th>
+                        <i>
+                            <strong>
+                                <p>
+                                    En esta página aprenderás los conceptos básicos para organizar 
+                                    los estilos de tus páginas web a través de la herramienta
+                                    CSS (Cascading Style Sheets), la cual es ampliamente utilizada en el 
+                                    desarrollo de páginas web a través de HTML (Hypertext Markup Language)<br>
+                                </p>
+                            </strong>
+                        </i>
+                    </th>
+                </thead>
+            </table>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h1>CSS</h1>
+        </div>
+        <hr>
+        <div class="paragraph">
+            <p>
+                <strong>Hojas de Estilo en Cascada</strong> (del inglés 
+                <em><strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</em>) 
+                o <strong>CSS</strong> es el lenguaje de estilos utilizado para describir la 
+                presentación de documentos HTML o XML (incluyendo varios 
+                lenguajes basados en XML como SVG, MathML o XHTML). CSS describe
+                cómo debe ser renderizado el elemento estructurado en la 
+                pantalla, en papel, en el habla o en otros medios.
+            </p>
+        </div>
+        <div class="paragraph">
+            <p>
+                <strong>CSS</strong> es uno de los lenguajes base de la Open Web y posee una especificación 
+                estandarizada por parte del W3C. Anteriormente , el desarrollo de varias 
+                partes de las especificaciones de CSS era realizado de manera sincrónica, 
+                lo que permitía el versionado de las recomendaciones. Probablemente habrás 
+                escuchado acerca de CSS1, CSS2.1, CSS3. Sin embargo, CSS4 nunca se ha 
+                lanzado como una versión oficial.
+            </p>
+        </div>
+        <div>
+            <h1>Primeros pasos en CSS</h1>
+        </div>
+        <div class="paragraph">
+            <p>
+                CSS es utilizado para diseñar y dar estilo a las páginas web, por ejemplo, 
+                alterando la fuente, color, tamaño y espaciado del contenido, dividirlo 
+                en múltiples columnas o agregar animaciones y otras características decorativas. 
+                Este módulo proporciona un suave comienzo hacia el dominio de CSS con los conceptos 
+                básicos acerca de su funcionamiento, la sintaxis y la manera en que puedes comenzar 
+                a utilizarlo para agregar estilos al HTML.
+            </p>
+        </div>
+        <div>
+            <h1>Agregar CSS a un documento</h1>
+        </div>
+        <div class="paragraph">
+            <p>
+                Lo primero que se debe hacer es decirle al documento HTML que hay algunas 
+                reglas CSS que queremos que use. Hay tres formas diferentes de aplicar CSS 
+                a un documento HTML, sin embargo, por ahora, veremos la forma más habitual 
+                y útil de hacerlo: vincular el CSS desde el encabezado del documento.
+            </p>
+            <p>
+                Crea un archivo en la misma carpeta que tu documento HTML y guárdalo como 
+                <small>styles.css</small>. La extensión <small>.css</small> muestra que es 
+                un archivo CSS.
+            </p>
+            <p>
+                Para vincular <small>styles.css</small> a <small>index.html</small>, añade 
+                la siguiente línea en algún lugar dentro del <span class="linked">&#60head&#62</span> 
+                del documento HTML:
+            </p>    
+        </div>
+        <table class="firstlabel">
+            <tbody>
+                <tr>
+                    <td class="labeled1">
+                        <strong>HTML</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labeled2">
+                        &#60<span class="code1">link</span> 
+                        <span class="code2">rel</span>=<span class="code1">"stylesheet"</span> 
+                        <span class="code2">href</span>= <span class="code1">"styles.css"</span> /&#62
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="paragraph">
+            <p>
+                Este elemento <span class="linked">&#60link&#62</span> le dice al 
+                navegador que hay una hoja de estilo con el atributo <small>rel</small> 
+                y la ubicación de esa hoja de estilo como el valor del atributo <small>href</small>.
+            </p>
+        </div>
+        <div>
+            <h1>Cambiar el comportamiento predeterminado de los elementos</h1>
+        </div>
+        <div class="paragraph">
+            <p>
+                Cuando miramos un documento HTML bien marcado, podemos ver que el 
+                navegador facilita la legibilidad de este documento HTML al añadir un estilo 
+                predeterminado. Los títulos se muestran grandes y en negrita, y la 
+                lista tiene viñetas. Esto sucede porque los navegadores tienen 
+                hojas de estilo internas que contienen estilos predeterminados, 
+                los cuales se aplican a todas las páginas por defecto. Sin ellos, 
+                todo el texto se uniría en un grupo y tendríamos que darle formato 
+                desde cero. Todos los navegadores modernos muestran el contenido 
+                HTML por defecto de la misma manera.
+            </p>
+            <p>
+                Sin embargo, a menudo querrás algo diferente a la elección que ha 
+                hecho el navegador. Esto se puede solucionar con el simple hecho de 
+                escoger el elemento HTML que deseas cambiar y utilizar una regla CSS 
+                para cambiar su apariencia. Un buen ejemplo es <small>&#60ul&#62</small>, que muestra una 
+                lista desordenada. Tiene viñetas y, si decidimos que no las queremos, 
+                podemos eliminarlas de este modo:
+            </p>
+        </div>
+        <table class="firstlabel">
+            <tbody>
+                <tr>
+                    <td class="labeled1">
+                        <strong>CSS</strong>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labeled2">
+                        <P class="inner">li {</P> 
+                            <p><span class="code2">list-style-type<span class="inner1">: none;</span></span></p>
+                        <p class="inner">}</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr>
+    <footer>&copy 2025&#46 Todos los derechos Reservados&#46</footer>
+</body>
+</html>
