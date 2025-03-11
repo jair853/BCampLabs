@@ -1,0 +1,19 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color: antiquewhite;
+}
+dl {
+    border: outset;
+    border-color: tomato;
+}
+dt {
+    color: blue;
+}
+dd {
+    background-color: bisque;
+}
+img {
+    border: double;
+    padding-left: 30px;
+}      
