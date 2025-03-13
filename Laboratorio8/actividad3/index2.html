@@ -3,8 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio 8</title>
+    <title>Estilos en hoja de estilos</title>
     <link rel="stylesheet" href="style1.css">
+    <style>
+        .term1, .term3 {
+            color:rgb(0, 0, 0);
+            background-color: aquamarine;
+        }
+        ul h3 {
+            background-color: brown;
+            text-decoration: overline;
+            color: white;
+        }
+        ul li {
+            color: brown;
+            font-weight: lighter;
+        }
+    </style>
 </head>
 <body>
     <h1>Estilos con CSS</h1>
@@ -12,21 +27,21 @@
         Este es el laboratorio para trabajar agregando estilos a una página html
         usando tres opciones: <br>
         <dl>
-            <dt>
+            <dt class="term1">
                 Estilos en línea:
             </dt><br>
             <dd>
                 Se hace dentro de la misma etiqueta, usando el atributo
                 "style".
             </dd><br>
-            <dt>
+            <dt class="term2">
                 Estilos dentro de la sección &#60head&#62: 
             </dt><br>
             <dd>
                 Se establece el estilo en la sección
                 &#60head&#62, usando el bloque &#60style&#62.
             </dd><br>
-            <dt>
+            <dt class="term3">
                 Estilos en archivo CSS:
             </dt><br>
             <dd>
@@ -36,6 +51,50 @@
             </dd>
         </dl>
     </p>
-    <img src="programming.jpg" alt="computadores y programación">
+    <ul>
+        <h3>
+            Uso de los estilos en hojas de estilo.
+        </h3>
+        <li>
+            Llamada a elementos específicos.
+        </li>
+        <li>
+            Llamada a conjuntos de elementos.
+        </li>
+        <li>
+            Reutilización de código.
+        </li>
+    </ul>
+    <table class="maintable" style="border: 5px inset tomato;">
+        <thead>
+            <tr>
+                <th class="headrow">
+                    Elemento
+                </th>
+                <th class="headrow">
+                    Atributo
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bdrow">
+                    &#60a&#62
+                </td>
+                <td class="bdrow">
+                    href
+                </td>
+            </tr>
+            <tr>
+                <td class="bdrow">
+                    &#60img&#62
+                </td>
+                <td class="bdrow">
+                    alt
+                </td>
+            </tr>
+        </tbody>
+    </table><br>
+    <img src="programming.jpg" alt="computadores y programación" style="margin: 10px; border-top-left-radius: 80px;">
 </body>
 </html>

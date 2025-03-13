@@ -3,17 +3,46 @@ h1 {
     font-size: 30px;
     background-color: antiquewhite;
 }
-dl {
-    border: outset;
-    border-color: tomato;
+p {
+    font-weight: bold;
+    background-color: rgb(232, 217, 245);
 }
-dt {
+dl {
+    border: 1vw outset tomato;
+    padding: 1%;
+}
+.term1, .term3 {
+    background-color: aliceblue;
     color: blue;
+}
+.term2 {
+    background-color: aquamarine;
+    color: brown;
 }
 dd {
     background-color: bisque;
 }
+ul h3{
+    background-color: bisque;
+    text-decoration:underline;
+}
+ul li {
+    color: blue;
+    font-weight: bold;
+}
+.maintable {
+    border: 3px groove palegreen;
+    border-radius: 4px;
+}
+.headrow {
+    border-style: ridge;
+}
+.bdrow {
+    border: 2px ridge greenyellow;
+}
+
 img {
-    border: double;
-    padding-left: 30px;
-}      
+    border:3vw inset firebrick;
+    padding-left: 0px;
+    border-radius: 10px;
+} 
