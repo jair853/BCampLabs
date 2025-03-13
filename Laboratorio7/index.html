@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jair Socarrás-Home page</title>
+    <style>
+        .maincontainer {
+            background-color:aliceblue;
+        }
+        .nombresyapellidos {
+            text-align: center;
+            background-color: azure;
+        }
+        .saludo {
+            text-align: center;
+            animation: saludoCambio 10s infinite;
+        }
+        @keyframes saludoCambio {
+            0% {color: blue; font: normal normal lighter 1.5vw Arial, Helvetica, sans-serif;}
+            25% {color: green; font: italic normal bold 1.5vw 'Courier New', Courier, monospace;}
+            50% {color: gray; font: normal normal lighter 1.5vw Arial, Helvetica, sans-serif;}
+            75% {color:coral; font: italic normal bold 1.5vw 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+            100% {color:chocolate;font: oblique normal bolder 1.5vw 'Courier New', Courier, monospace;}
+        }
+        .imagenper {
+            height: 200px;
+            background-image: url("FotoPersonal.jpeg");
+            animation: fotocambio 15s infinite;
+        }
+
+        @keyframes fotocambio {
+            0% {background: beige url("FotoPersonal.jpeg") left top/15vw 15vw no-repeat padding-box border-box;}
+            25% {background: floralwhite url("FotoPersonal.jpeg") center top/15vw 15vw no-repeat border-box padding-box;}
+            50% {background: bisque url("FotoPersonal.jpeg") right top/15vw 15vw no-repeat content-box content-box;}
+            75% {background: tan url("FotoPersonal.jpeg") right bottom/15vw 15vw no-repeat padding-box border-box;}
+            100% {background:rgb(253, 181, 155) url("FotoPersonal.jpeg") left bottom/15vw 15vw no-repeat border-box padding-box;}
+        }
+        .nav-bar {
+            display: flex; 
+            list-style-type: none;
+            padding: 1vw;
+            background-color:gray;
+        }
+        .nav-item {
+            flex: 25%;
+            text-align: center;
+        }
+        .item-nav {
+            border: 1vw outset goldenrod;
+            border-start-start-radius: 1vw; 
+            border-end-end-radius: 1vw;
+            text-align: center;
+        }
+        hr {
+            border-style: solid; border-color: brown;
+        }
+        .datosper {
+            border: 5px inset aqua;
+        }
+        .itemcontrol {
+            width: 20vw;
+            height: 2vw;
+            cursor: pointer;
+            color: blue;
+            margin-left: 1vw;
+        }
+        .dato {
+            text-align: left; 
+            border: 0.5vw ridge cadetblue;
+        }
+        .info {
+            text-align: left; 
+            border: 0.3vw groove goldenrod;
+        }
+        .perf {
+            background-color: rgb(245, 229, 185);
+            text-align: justify;
+            font: italic normal bolder 1vw 'Courier New', Courier, monospace;
+            border: 0.3vw solid black;
+            padding: 1vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div class="nombresyapellidos">
+            <h1>
+                Jair Socarrás Díaz
+            </h1>
+            <hr>
+        </div>
+        <div>
+            <p class="saludo">
+                Hola, es un placer para mí que visites mi página web
+                <h1 class="saludo">Bienvenid@!!!</h1>
+                <hr>
+            </p>
+        </div>
+        <div>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="nav-item">
+                        <button class="itemcontrol">
+                            <a href="#dpers"></a>Datos personales</button>
+                    </li>
+                    <li class="nav-item"><button class="itemcontrol"><a href="#pprof"></a>
+                        Perfil profesional</button>
+                    </li>
+                    <li class="nav-item" ><button class="itemcontrol">
+                        <a href="#pyg"></a>Pasatiempos y gustos</button>
+                    </li>
+                    <li class="nav-item"><button class="itemcontrol"><a href="#comp"></a>
+                        Compromisos</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+        <div class="datosper">
+            <h2 id="dpers" class="item-nav">
+                Datos Personales
+            </h2>
+            <div>
+                <table>
+                    <tr>
+                        <th class="dato">
+                            Nombres y Apellidos
+                        </th>
+                        <td class="info">
+                            Jair José Socarrás Díaz
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="dato">
+                            Profesión
+                        </th>
+                        <td class="info">
+                            Ingeniero Agroindustrial - Estudiante de programación
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="dato">
+                            Ciudad de residencia
+                        </th>
+                        <td class="info">
+                            Valledupar-Cesar
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="dato">
+                            Teléfono de Contacto
+                        </th>
+                        <td class="info">
+                            3106066455
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="dato">
+                            Correo Electrónico
+                        </th>
+                        <td class="info">
+                            jjsd204@gmail.com
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h2 id="pprof" class="item-nav">
+                Perfil Profesional
+            </h2>
+            <div>
+                <p class="perf">Ingeniero Agroindustrial egresado de la Universidad Popular del Cesar, Master en Direccionamiento
+                    Estratégico, Planificación y Control de la Gestión
+                    del Instituto Eurotechnology Empresas España.</p>
+                <div>
+                    <h4>
+                        Logros como gestor de proyectos
+                    </h4>
+                    <table>
+                        <tr>
+                            <th>
+                                Nombre del proyecto
+                            </th>
+                            <th>
+                                Recursos asignados (COP$)
+                            </th>
+                            <th>
+                                Convocatoria o Programa
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Implementación de un vivero ambiental en el municipio de Bosconia, Cesar, para la 
+                                gestión del Plan de Manejo Ambiental del proyecto Ruta del Sol en el tramo comprendido 
+                                entre el corregimiento de La Loma de Potrerillo en el municipio de El Paso y el corregimiento
+                                de Caracolicito en el municipio de El Copey.
+                            </td>
+                            <td>
+                                101.590.880
+                            </td>
+                            <td>
+                                Fondo Emprender
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Proyecto de Alianzas Productivas para el Mejoramiento de las Condiciones
+                                Productivas y de Beneficio de Productores Cafeteros Orgánicos en la Sierra
+                                Nevada de Santa Marta, ASOPROCASINES II
+                            </td>
+                            <td>
+                                958.183.584
+                            </td>
+                            <td>
+                                Alianzas Productivas
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Fortalecimiento de la producción de cacao como alternativa productiva para
+                                la generación de ingresos y sostenibilidad ambiental en el municipio de
+                                Montelíbano Córdoba. Municipio de Montelíbano, departamento de Córdoba.
+                                Código proyecto: 2019-254-0007302
+                            </td>
+                            <td>
+                                2.529.820.120
+                            </td>
+                            <td>
+                                Fondo Colombia En Paz-Banco Interamericano de Desarrollo-Agencia para la Renovación del Territorio
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <h4>
+                        Logros como estudiante de análisis de datos
+                    </h4>
+                    <table>
+                        <tr>
+                            <th>
+                                Actividad principal del análisis
+                            </th>
+                            <th>
+                                nombre del conjunto de datos
+                            </th>
+                            <th>
+                                Repositorio o fuente del conjunto de datos
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                Análisis del tiempo de crecimiento en el cultivo de lechuga
+                            </td>
+                            <td>
+                                lettuce_growth_days_updated_dataset
+                            </td>
+                            <td>
+                                Kaggle
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div>
+                    <h4>
+                        Logros como estudiante de programación
+                    </h4>
+                    <table>
+                        <tr>
+                            <th>
+                                Programa
+                            </th>
+                            <th>
+                                Función o Implementación
+                            </th>
+                            <th>
+                                Repositorio y/o Plataforma
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://raw.githubusercontent.com/code50/130526912/refs/heads/main/credit/credit.c?token=GHSAT0AAAAAADADDOPJEO5AYKUHDJWLRPMKZ6TDYFQ" 
+                                target="_blank">
+                                    Credit
+                                </a>
+                            </td>
+                            <td>
+                                Validar números de tarjetas de crédito a través del algoritmo Luhn inventado por Hans Peter Luhn
+                            </td>
+                            <td>
+                                <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer">
+                                    Jair Socarras (JaoJSD)-Github
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://raw.githubusercontent.com/code50/130526912/refs/heads/main/readability/readability.c?token=GHSAT0AAAAAADADDOPIEU2MKQIHROJMNA7OZ6TDQVA" 
+                                target="_blank">
+                                    Readability
+                                </a>
+                            </td>
+                            <td>
+                                Determinar el grado de complejidad de un texto basado en el índice <strong>Coleman-Liau</strong>
+                            </td>
+                            <td>
+                                <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer">
+                                    Jair Socarras (JaoJSD)-Github
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://raw.githubusercontent.com/code50/130526912/refs/heads/main/substitution/substitution.c?token=GHSAT0AAAAAADADDOPJAWK5INFAXBAOLDRGZ6TD65A" 
+                                target="_blank">
+                                    Substitution
+                                </a>
+                            </td>
+                            <td>
+                                Algoritmo para encriptar mensajes
+                            </td>
+                            <td>
+                                <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer">
+                                    Jair Socarras (JaoJSD)-Github
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://raw.githubusercontent.com/code50/130526912/refs/heads/main/tideman/tideman.c?token=GHSAT0AAAAAADADDOPJ7GXHB6G3XR5HL66MZ6TEE7A" 
+                                target="_blank">
+                                    Tideman
+                                </a>
+                            </td>
+                            <td>
+                                Determinar el ganador de un proceso electoral mediante el método de matriz adjacente
+                            </td>
+                            <td>
+                                <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer">
+                                    Jair Socarras (JaoJSD)-Github
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://raw.githubusercontent.com/code50/130526912/refs/heads/main/filter-more/helpers.c?token=GHSAT0AAAAAADADDOPJZR7CQN2OIGQ5QQEOZ6TEITA" 
+                                target="_blank">
+                                    Filter-more
+                                </a>
+                            </td>
+                            <td>
+                                Aplicar filtros a imágenes (escala de grises, imagen reflejada, imagen difusa y detección de bordes en imágenes)
+                            </td>
+                            <td>
+                                <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer">
+                                    Jair Socarras (JaoJSD)-Github
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <h2>
+                    Foto Personal
+                </h2>
+                <div class="imagenper"></div>
+            </div>
+            <hr>
+            <div style="display: flex;">
+                <div class="ximage">
+                    <a href="https://x.com/ja1879" target="_blank"><img src="X.png" alt="Enlace a X" 
+                    style="flex:1; margin: 0.5vw; cursor: pointer; max-width: 5vw;"></a>
+                </div>
+                <div>
+                    <a href="https://web.facebook.com/jair.socarras" target="_blank"><img src="facebook.png" 
+                        alt="Enlace a facebook" style="flex:1; margin: 0.5vw; cursor: pointer; max-width: 5vw;"></a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/jair-socarras-538a8832/" target="_blank"><img src="Linkedin.png" 
+                        alt="Enlace a Linkedin" style="flex:1; margin: 0.5vw; cursor: pointer; max-width: 5vw;"></a>
+                </div>
+                <div>
+                    <img src="kaggle.png" alt="Enlace a Linkedin" style="flex:1; margin: 0.5vw; cursor: pointer; 
+                    max-width: 5vw;" onclick="window.open('https://www.kaggle.com/jairsocarras', '_blank')">
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <br>
+            <h2 id="pyg">
+                Pasatiempos y gustos
+            </h2>
+            <br>
+            <ul>
+                <h3>
+                    Pasatiempos
+                </h3>
+                <li>
+                    Leer
+                </li>
+                <li>
+                    Salir a caminar / ir al parque
+                </li>
+                <li>
+                    Ir a cine
+                </li>
+                <li>
+                    Comer fuera de casa
+                </li>
+                <li>
+                    Escuchar música
+                </li>
+            </ul>
+            <br>
+            <ul>
+                <h3>
+                    Gustos
+                </h3>
+                <li>
+                    Estudiar programación
+                </li>                
+                <li>
+                    Mejorar mis habilidades en inglés
+                </li>
+                <li>
+                    Aprender sobre análisis de datos
+                </li>
+                <li>
+                    Aprender sobre ciberseguridad
+                </li>
+                <li>
+                    Bailar
+                </li>
+                <li>
+                    Comer
+                </li>
+                <li>
+                    Dormir / Descansar
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div id="comp">
+            <ol>
+                <h2>
+                    Compromisos
+                </h2>
+                <br>
+                <li>
+                    <a href="http://trello.com/b/49eyM9D9/english" target="_blank" 
+                    rel="noopener noreferrer">Estudiar inglés para alcanzar nivel C2</a>
+                </li>
+                <li>
+                    <a href="https://cs50.me/cs50x" target="_blank" 
+                    rel="noopener noreferrer">Continuar el curso de programación en C con edX - MIT</a>
+                </li>
+                <li>
+                    <a href="https://campus.talentotechcaribe.co/my/courses.php" target="_blank" 
+                    rel="noopener noreferrer">Realizar el curso de programación con Talento Tech</a>
+                </li>
+                <li>
+                    <a href="https://www.coursera.org/learn/data-preparation/supplement/Ezoa1/coming-up-next" target="_blank" 
+                    rel="noopener noreferrer">Continuar con el curso de análisis de datos en Coursera - Google</a>
+                </li>
+            </ol>
+        </div>
+        <div>
+            <Table>
+                <thead>
+                    <tr>
+                        <th style="-ms-grid-row-span: 2">
+                            Hora
+                        </th>
+                        <th style="columns 40vw 5; text-align: center;">
+                            Día
+                        </th>
+                        <tr>
+                            <th></th>
+                            <th>
+                                Lunes
+                            </th>
+                            <th>
+                                Martes
+                            </th>
+                            <th>
+                                Miércoles
+                            </th>
+                            <th>
+                                Jueves
+                            </th>
+                            <th>
+                                Viernes
+                            </th>
+                        </tr>
+                        </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            7:30 a.m.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            8:30 a.m.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            9:30 a.m.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            10:30 a.m.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            11:30 a.m.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            12:30 p.m.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2:30 p.m.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3:30 p.m.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4:30 p.m.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5:30 p.m.
+                        </td>
+                    </tr>
+                </tbody>
+            </Table>
+        </div>
+    </div>
+</body>
+
+</html>
