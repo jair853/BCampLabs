@@ -44,11 +44,11 @@
             background-color:gray;
         }
         .nav-item {
-            flex: 25%;
+            flex: 20%;
             text-align: center;
         }
         .item-nav {
-            border: 1vw outset goldenrod;
+            border: 0.4vw outset goldenrod;
             border-start-start-radius: 1vw; 
             border-end-end-radius: 1vw;
             text-align: center;
@@ -80,6 +80,73 @@
             font: italic normal bolder 1vw 'Courier New', Courier, monospace;
             border: 0.3vw solid black;
             padding: 1vw;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            padding: 1vw;
+        }
+        td, th {
+            border: 1px solid black; 
+            padding: 0.5vw;
+        }
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        table tr:hover {
+            background-color: #ddd;
+        }
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #04AA6D;
+            color: white;
+        }
+        .logro {
+            border: 0.4vw outset rgb(243, 66, 66);
+            border-radius: 0.3vw;
+            text-align: center;
+            padding: 0.3vw;
+            background-color: aquamarine;
+        }
+        .redes {
+            display: flex;
+        }
+        .pasat {
+            border: 0.3vw inset rgb(243, 73, 51);
+            list-style-type: none;
+            display:flex;
+            text-align: center;
+        }
+        .gust {
+            color: white;
+            background-color: #04AA6D;
+            border: 0.3vw outset rgb(218, 85, 32);
+            border-radius: 0.5vw;
+            padding: 0.3vw;
+            margin: 0.4vw;
+            text-align: center;
+            flex: auto;
+            font:italic 1.5vw cursiva;
+        }
+        .gust:hover {
+            background-color: gray;
+            cursor: pointer;
+        }
+        .list {
+            padding: 0%;
+        }
+        .item-list {
+            padding-top: 1%;
+            padding-bottom: 0.5%;
+            margin-left: 1.5vw;
+            margin-bottom: 1vw;
+            border-radius: 0.2vw;
+            border: groove grey;
+        }
+        ::marker {
+            font-weight: bolder;
         }
     </style>
 </head>
@@ -178,7 +245,7 @@
                     Estratégico, Planificación y Control de la Gestión
                     del Instituto Eurotechnology Empresas España.</p>
                 <div>
-                    <h4>
+                    <h4 class="logro">
                         Logros como gestor de proyectos
                     </h4>
                     <table>
@@ -240,7 +307,7 @@
             <hr>
             <div>
                 <div>
-                    <h4>
+                    <h4 class="logro">
                         Logros como estudiante de análisis de datos
                     </h4>
                     <table>
@@ -272,7 +339,7 @@
             <hr>
             <div>
                 <div>
-                    <h4>
+                    <h4 class="logro">
                         Logros como estudiante de programación
                     </h4>
                     <table>
@@ -295,7 +362,7 @@
                                 </a>
                             </td>
                             <td>
-                                Validar números de tarjetas de crédito a través del algoritmo Luhn inventado por Hans Peter Luhn
+                                Validar números de tarjetas de crédito a través del algoritmo <i>Luhn</i> inventado por <strong>Hans Peter Luhn</strong>
                             </td>
                             <td>
                                 <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer">
@@ -343,7 +410,7 @@
                                 </a>
                             </td>
                             <td>
-                                Determinar el ganador de un proceso electoral mediante el método de matriz adjacente
+                                Determinar el ganador de un proceso electoral mediante el método de <em>matriz adjacente</em>
                             </td>
                             <td>
                                 <a href="https://github.com/dashboard" target="_blank" rel="noopener noreferrer">
@@ -372,106 +439,107 @@
             </div>
             <hr>
             <div>
-                <h2>
+                <h2 class="logro">
                     Foto Personal
                 </h2>
                 <div class="imagenper"></div>
             </div>
             <hr>
-            <div style="display: flex;">
+            <div class="redes">
+                <h3>Visitas mis redes sociales: </h3>
                 <div class="ximage">
                     <a href="https://x.com/ja1879" target="_blank"><img src="X.png" alt="Enlace a X" 
-                    style="flex:1; margin: 0.5vw; cursor: pointer; max-width: 5vw;"></a>
+                    style="flex:1; margin: 1vw; cursor: pointer; max-width: 4vw;"></a>
                 </div>
                 <div>
                     <a href="https://web.facebook.com/jair.socarras" target="_blank"><img src="facebook.png" 
-                        alt="Enlace a facebook" style="flex:1; margin: 0.5vw; cursor: pointer; max-width: 5vw;"></a>
+                        alt="Enlace a facebook" style="flex:1; margin: 0.5vw; cursor: pointer; max-width: 3.5vw;"></a>
                 </div>
                 <div>
                     <a href="https://www.linkedin.com/in/jair-socarras-538a8832/" target="_blank"><img src="Linkedin.png" 
-                        alt="Enlace a Linkedin" style="flex:1; margin: 0.5vw; cursor: pointer; max-width: 5vw;"></a>
+                        alt="Enlace a Linkedin" style="flex:1; margin: 0.5vw; cursor: pointer; max-width: 4.2vw;"></a>
                 </div>
                 <div>
-                    <img src="kaggle.png" alt="Enlace a Linkedin" style="flex:1; margin: 0.5vw; cursor: pointer; 
-                    max-width: 5vw;" onclick="window.open('https://www.kaggle.com/jairsocarras', '_blank')">
+                    <img src="kaggle.png" alt="Enlace a Linkedin" style="flex:1; margin-top: 1.2vw; margin-left: 0.4vw; cursor: pointer; 
+                    max-width: 6vw;" onclick="window.open('https://www.kaggle.com/jairsocarras', '_blank')">
                 </div>
             </div>
         </div>
         <hr>
         <div>
             <br>
-            <h2 id="pyg">
+            <h2 id="pyg" class="item-nav">
                 Pasatiempos y gustos
             </h2>
             <br>
-            <ul>
+            <ul class="pasat">
                 <h3>
                     Pasatiempos
                 </h3>
-                <li>
+                <li class="gust">
                     Leer
                 </li>
-                <li>
+                <li class="gust">
                     Salir a caminar / ir al parque
                 </li>
-                <li>
+                <li class="gust">
                     Ir a cine
                 </li>
-                <li>
+                <li class="gust">
                     Comer fuera de casa
                 </li>
-                <li>
+                <li class="gust">
                     Escuchar música
                 </li>
             </ul>
             <br>
-            <ul>
+            <ul class="pasat">
                 <h3>
                     Gustos
                 </h3>
-                <li>
+                <li class="gust">
                     Estudiar programación
                 </li>                
-                <li>
+                <li  class="gust">
                     Mejorar mis habilidades en inglés
                 </li>
-                <li>
+                <li class="gust">
                     Aprender sobre análisis de datos
                 </li>
-                <li>
+                <li class="gust">
                     Aprender sobre ciberseguridad
                 </li>
-                <li>
+                <li class="gust">
                     Bailar
                 </li>
-                <li>
+                <li class="gust">
                     Comer
                 </li>
-                <li>
+                <li class="gust">
                     Dormir / Descansar
                 </li>
             </ul>
         </div>
         <hr>
         <div id="comp">
-            <ol>
-                <h2>
+            <ol class="list">
+                <h2 class="item-nav">
                     Compromisos
                 </h2>
                 <br>
-                <li>
+                <li class="item-list">
                     <a href="http://trello.com/b/49eyM9D9/english" target="_blank" 
                     rel="noopener noreferrer">Estudiar inglés para alcanzar nivel C2</a>
                 </li>
-                <li>
+                <li class="item-list">
                     <a href="https://cs50.me/cs50x" target="_blank" 
                     rel="noopener noreferrer">Continuar el curso de programación en C con edX - MIT</a>
                 </li>
-                <li>
+                <li class="item-list">
                     <a href="https://campus.talentotechcaribe.co/my/courses.php" target="_blank" 
                     rel="noopener noreferrer">Realizar el curso de programación con Talento Tech</a>
                 </li>
-                <li>
+                <li class="item-list">
                     <a href="https://www.coursera.org/learn/data-preparation/supplement/Ezoa1/coming-up-next" target="_blank" 
                     rel="noopener noreferrer">Continuar con el curso de análisis de datos en Coursera - Google</a>
                 </li>
@@ -481,14 +549,13 @@
             <Table>
                 <thead>
                     <tr>
-                        <th>
+                        <th class="hora" rowspan="2">
                             Hora
                         </th>
-                        <th style="text-align: center;">
+                        <th class=" dia" colspan="5">
                             Día
                         </th>
                         <tr>
-                            <th></th>
                             <th>
                                 Lunes
                             </th>
@@ -715,7 +782,7 @@
     <hr>
     <br>
 <div>
-    <h2 id="cont">Contáctame</h2>
+    <h2 id="cont" class="item-nav">Contáctame</h2>
     <form action="">
         <label for="nombre">Nombres y Apellidos:</label>
         <input type="text" name="nombre" id="nm" style="margin-left: 0.5vw;"><br>

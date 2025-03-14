@@ -1,0 +1,23 @@
+.contheader {
+    display: flex;
+}
+.contheader .marca h1 {
+    flex: 50%;
+    background: rgb(238, 203, 108);
+    border: outset;
+    width: 100%;
+    text-align: center;
+}
+.contheader .slogan h2 {
+    flex: 50%;
+    background: aquamarine;
+    border: inset;
+    width: 100%;
+    text-align: center;
+}
+.productos {
+    display: flex;
+}
+li {
+    list-style-type: none;
+}
