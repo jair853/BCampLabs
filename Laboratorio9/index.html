@@ -1,109 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS-Selectores</title>
-    <link rel="stylesheet" href="/styles/style1.css">
+    <link rel="stylesheet" href="styles/style1.css">
 </head>
-<body>
-    <div class="contheader">
-        <header class="marca">
-            <div>
+
+<body id="topPage">
+    <a href="#topPage"><button class="inicio" type="button">Inicio</button></a>
+    <div>
+        <header class="contheader">
+            <div class="marca">
                 <h1>
                     Class&qs
                 </h1>
             </div>
+            <div class="slogan">
+                <h3>
+                    Tu Vida... Tus momentos
+                </h3>
+            </div>
         </header>
-        <div class="slogan">
-            <h2>
-                Tu vida... Tus momentos
-            </h2>
-        </div>
     </div>
+    <br>
+    <hr>
+    <div><a class="linked" href="#contacto">
+            <h4 class="contact">Contacto</h4>
+        </a></div>
     <div class="productos">
-        <nav>
-            <ul>
-                <li>
-                    Postres y Tortas Saludables
-                </li>
-                <li>
-                    Pasabocas
-                </li>
-                <li>
-                    Postres y Tortas Tradicionales
-                </li>
-            </ul>
+        <h2 class="nprod">
+            Nuestros productos
+        </h2>
+        <nav class="listprod">
+            <div class="item prod1">
+                <a class="linked" href="#tortaSalud">Postres y Tortas Saludables</a>
+            </div>
+            <div class="item prod2">
+                <a class="linked" href="#pasab">Pasabocas</a>
+            </div>
+            <div class="item prod3">
+                <a class="linked" href="#trad">Postres y Tortas Tradicionales</a>
+            </div>
         </nav>
     </div>
+    <br>
+    <hr>
+    <div class="mosaico"></div><br>
+    <hr>
     <div>
         <div>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <p>
-                        Torta de almendras con Vainilla
-                    </p>
+            <h2 id="tortaSalud" class="encabProd">Saludables</h2>
+            <ul class="saludables">
+                <li class="varios">
+                    <img class="seccion1" src="imagesSal/1.TortaNarVainAreq_Moment.jpg" alt="">
+                    <div class="valorProd">
+                        <p class="nombreprod">
+                            Torta de almendras con Vainilla
+                        </p>
+                        <p class="info"><strong>Grande:</strong> 12 porciones <br>
+                            <strong>Precio:</strong> COP$ 83.500 <br>
+                            <strong>Pequeña:</strong> 8 porciones <br>
+                            <strong>Precio:</strong> COP$ 55.500
+                        </p>
+                    </div>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <p>
-                        Torta de almendras con Chocolate
-                    </p>
+                <li class="varios">
+                    <img class="seccion1" src="imagesSal/TortaAlmendCh.jpg" alt="">
+                    <div class="valorProd">
+                        <p class="nombreprod">
+                            Torta de almendras con Chocolate
+                        </p>
+                        <p class="info"><strong>Grande:</strong> 12 porciones <br>
+                            <strong>Precio:</strong> COP$ 79.400<br>
+                            <strong>Pequeña:</strong> 8 porciones <br>
+                            <strong>Precio:</strong> COP$ 53.300
+                        </p>
+                    </div>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <p>
-                        Pie de Chocolate
-                    </p>
+                <li class="varios">
+                    <img class="seccion1" src="imagesSal/image_67565057.JPG" alt="">
+                    <div class="valorProd">
+                        <p class="nombreprod">
+                            Pie de Chocolate
+                        </p>
+                        <p class="info"><strong>Grande:</strong> 12 porciones <br>
+                            <strong>Precio:</strong> COP$ 89.400
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h2 id="pasab" class="encabProd">Pasabocas</h2>
+            <ul class="saludables">
+                <li class="varios">
+                    <img class="tsalud1" src="imagesPas/deditos.jpeg" alt="">
+                    <div class="valorProd">
+                        <p class="nombreprod">
+                            Deditos de Queso
+                        </p>
+                        <p class="info"><strong>Bandeja:</strong> 25 unidades <br>
+                            <strong>Precio:</strong> COP$ 15.000
+                        </p>
+                    </div>
+                </li>
+                <li class="varios">
+                    <img class="tsalud1" src="imagesPas/IceTubesClass&qs.jpeg" alt="">
+                    <div class="valorProd">
+                        <p class="nombreprod">
+                            Icetubes
+                        </p>
+                        <p class="info"><strong>Sabores Gourmet:</strong> Por unidad <br>
+                            <strong>Precio:</strong> COP$ 2.000 <br>
+                            <strong>Sabores Tradicionales:</strong> Por unidad <br>
+                            <strong>Precio:</strong> COP$ 1.000
+                        </p>
+                    </div>
                 </li>
             </ul>
         </div>
         <div>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <p>
-                        Deditos de queso
-                    </p>
+            <h2 id="trad" class="encabProd">Tradicionales</h2>
+            <ul class="saludables">
+                <li class="varios">
+                    <img class="tsalud1" src="imagesTrad/TortaBrigadeiro.jpg" alt="">
+                    <div class="valorProd">
+                        <p class="nombreprod">
+                            Torta Brigadeiro
+                        </p>
+                        <p class="info"><strong>Grande:</strong> 16 porciones <br>
+                            <strong>Precio:</strong> COP$ 72.400 <br>
+                            <strong>Pequeña:</strong> 10 porciones <br>
+                            <strong>Precio:</strong> COP$ 52.600
+                        </p>
+                    </div>
                 </li>
-                <li>
-                    <img src="" alt="">
-                    <p>
-                        Icetubes
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <img src="" alt="">
-                    <p>
-                        Torta Brigadeiro
-                    </p>
-                </li>
-                <li>
-                    <img src="" alt="">
-                    <p>
-                        Torta Ferrero
-                    </p>
+                <li class="varios">
+                    <img class="tsalud1" src="imagesTrad/Tradic-image_67542273.Ferrero.JPG" alt="">
+                    <div class="valorProd">
+                        <p class="nombreprod">
+                            Torta Ferrero
+                        </p>
+                        <p class="info"><strong>Grande:</strong> 16 porciones <br>
+                            <strong>Precio:</strong> COP$ 76.700 <br>
+                            <strong>Pequeña:</strong> 10 porciones <br>
+                            <strong>Precio:</strong> COP$ 62.800
+                        </p>
+                    </div>
                 </li>
             </ul>
         </div>
     </div>
     <div>
-        <div>
+        <h2 id="contacto" class="footTitulo">
+            Contacto
+        </h2>
+    </div>
+    <div class="footPrin">
+        <div class="footSec telefono">
             <p>
-                Contacto
+                Teléfono: 3106066455
             </p>
         </div>
-        <div>
+        <div class="whatsapp">
             <p>
-                Línea directa: 3106066455
+                WhatsApp: 3106066455
             </p>
         </div>
-        <div>
+        <div class="footSec correo">
             <p>
                 Correo Electrónico: jjsd204@gmail.com
             </p>

@@ -1,23 +1,241 @@
+body {
+    background-color: rgb(221, 248, 190);
+}
 .contheader {
     display: flex;
 }
-.contheader .marca h1 {
-    flex: 50%;
-    background: rgb(238, 203, 108);
-    border: outset;
-    width: 100%;
+.inicio {
+    position:fixed;
+    bottom: 0%;
+    left: 95%;
+    background-color: rgb(97, 241, 217);
+    border-radius: 0.3vw;
+    font-weight: bolder;
     text-align: center;
+    padding: 0.5vw;
+    cursor: pointer;
+    color: blueviolet;
 }
-.contheader .slogan h2 {
-    flex: 50%;
+.inicio:hover {
+    background-color: rgb(245, 152, 248);
+}
+.contact {
+    background-color:violet;
+    width: 10vw;
+    text-align: center;
+    border: outset 0.3vw;
+    background-position: left;
+}
+.contact:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+}
+.marca {
+    font-size: 1.5vw;
+    background: rgb(234, 108, 238);
+    border: outset;
+    text-align: center;
+    animation: principal 10s infinite;
+}
+.slogan {
+    font-size: 1.5vw;
     background: aquamarine;
     border: inset;
-    width: 100%;
     text-align: center;
+    animation: eslogan 10s infinite;
 }
-.productos {
+.marca, .slogan {
+    flex: 50%;
+}
+@keyframes principal {
+    0% {background-color: rgb(234, 108, 238); border-style: outset;
+    border-radius: 0.2vw; font-size: 1.5vw;}
+    20% {background-color: aquamarine; border-style: inset;
+        font: italic 1.5vw 'Courier New', Courier, monospace;}
+    40% {background-color: rgb(234, 108, 238); border-style: outset;
+        border-radius: 0.2vw; font: oblique 1.5vw cursive;}
+    60% {background-color: aquamarine; border-style: inset;
+        font: 1.5vw sans-serif;}
+    80% {background-color: rgb(234, 108, 238); border-style: outset;
+        border-radius: 0.2vw;  font: italic 1.5vw  Georgia, 'Times New Roman', Times, serif;}
+    100% {background-color: aquamarine; border-style: inset;
+         font: oblique 1.5vw;}
+}
+@keyframes eslogan {
+    0% {background-color: aquamarine; border-style: inset; font-size: 1.5vw;}
+    20% {background-color: rgb(234, 108, 238); border-style: outset;
+        border-radius: 0.2vw; font: oblique 1.5vw Georgia, 'Times New Roman', Times, serif;}
+    40% {background-color: aquamarine; border-style: inset; font: italic 1.5vw cursive;}
+    60% {background-color: rgb(234, 108, 238); border-style: outset;
+        border-radius: 0.2vw; font: normal 1.5vw sans-serif;}
+    80% {background-color: aquamarine; border-style: inset;
+        font: oblique 1.5vw 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    100% {background-color: rgb(234, 108, 238); border-style: outset;
+        border-radius: 0.2vw; font: italic 1.5vw;}
+}
+.nprod {
+    width: 97%;
+    margin:2vw 0vw 1vw 0.5vw;
+    padding: 0.5vw;
+    text-align: center;
+    background-color: aquamarine;
+    border: 0.3vw solid palevioletred;
+    color: rgb(206, 65, 219);
+    font-family:cursive;
+}
+.nprod:hover {
+    cursor: pointer;;
+}
+.item {
+    display: none;
+}
+.item:hover {
+    background-color: aqua;
+}
+.productos:hover .item{
+    cursor: pointer;
     display: flex;
 }
-li {
+.prod1, .prod2, .prod3 {
+    flex:30%;
+    background-color: rgb(245, 152, 248);
+    border: 0.5vw groove;
+    padding-top: 0.5vw;
+    font-family: cursive;
+    font-size: larger;
+    font-weight: bold;
+}
+.prod1 {
+    padding-left: 3.5vmax;
+}
+.prod2 {
+    padding-left: 15vmax;
+}
+.prod3 {
+    padding-left: 2vmax;
+}
+.listprod {
+    display: flex;
+    column-gap: 2vw;
+    width: 98%;
+    margin:0vw 0vw 0vw 1vw;
+    height: 4vw;
+}
+.saludables {
     list-style-type: none;
+    display: flex;
+    column-gap: 2vw;
+}
+.tsalud1 {
+    flex: 50%;
+    width: 40vw;
+    height: 40vw;
+}
+.mosaico {
+    background-image: url("/Laboratorio9/imagesSal/image_67565057.JPG");
+    height: 30vw;
+    animation: collage 20s infinite;
+}
+@keyframes collage {
+    0% {background-image: url("/Laboratorio9/imagesSal/image_67214337.JPG"); 
+        background-position: center;background-size: contain}
+    15% {background-image: url("/Laboratorio9/imagesTrad/12.TortaEntreCapAreq\ -\ frame\ at\ 0m9s.jpg");
+        background-position: center;background-size: contain}
+    30% {background-image: url("/Laboratorio9/imagesSal/8.TortaTripleChoc\ -\ frame\ at\ 0m8s.jpg");
+        background-position: center;background-size: contain}
+    45% {background-image: url("/Laboratorio9/imagesTrad/Tradic-image_67546881.Zanah.JPG");
+        background-position: center;background-size: contain}
+    60% {background-image: url("/Laboratorio9/imagesSal/Salud-image_67533057_marq.jpg");
+        background-position: center;background-size: contain}
+    75% {background-image: url("/Laboratorio9/imagesTrad/image_67229441.JPG");
+        background-position: center;background-size: contain}
+    90% {background-image: url("/Laboratorio9/imagesSal/Salud-IMG-1794.RedVelvet.jpg");
+        background-position: center;background-size: contain}
+    100% {background-image: url("/Laboratorio9/imagesTrad/image_67523585.JPG");
+        background-position:center; background-size: contain;}
+}
+.linked {
+    text-decoration: none;
+}
+.seccion1 {
+    flex: 30%;
+    width: 28vw;
+    height: 30vw;
+    padding: 0.3vw;
+}
+
+.info {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    color: blueviolet;
+    background-color: antiquewhite;
+    display: none;
+    text-align: left;
+}
+.nombreprod {
+    font-size: x-large;
+    font-family:cursive;
+    color: blueviolet;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.1vw;
+    border: outset 0.3vw beige;
+    background-color: aquamarine;
+}
+.nombreprod:hover {
+    cursor: pointer;
+}
+.valorProd:hover .info {
+    display: block;
+}
+.varios {
+    background-color: rgb(245, 152, 248);
+    border: ridge 0.1vw;
+    padding: 0.5vw;
+}
+.encabProd {
+    text-align: center;
+    background-color:turquoise;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blue;
+}
+hr {
+    border: inset 0.3vw rgb(240, 101, 210);
+}
+.footTitulo {
+    text-align: center;
+}
+.footPrin {
+    display: flex;
+}
+.footTitulo, .footPrin {
+    background-color: rgb(75, 73, 73);
+    border-color:rgb(135, 163, 222);
+    border-style: groove;
+    border-radius: 0.6vw;
+    box-shadow: 0.3vw 0.5vw rgb(103, 148, 243);
+}
+.footSec, .whatsapp {
+    flex: 30%;
+    color: aliceblue;
+    font: oblique 1.5vw cursive;
+    text-align: center;
+    padding-top: 0.5vw;
+}
+.telefono::before {
+    content: url("/Laboratorio9/telefono.jpg");
+}
+.whatsapp::before {
+    content: url("/Laboratorio9/whatsapp.jpg");
+}
+.correo::before {
+    content: url("/Laboratorio9/correo.jpg");
+}
+.nprod, .prod1, .prod2, .prod3, 
+.tsalud1, .mosaico, .seccion1, .info, 
+.nombreprod, .varios, .encabProd {
+    border-color:burlywood;
+    border-style: groove;
+    border-radius: 0.6vw;
+    box-shadow: 0.3vw 0.5vw gray;
 }
