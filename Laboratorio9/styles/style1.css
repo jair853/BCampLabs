@@ -204,6 +204,7 @@ hr {
 }
 .footTitulo {
     text-align: center;
+    color: aliceblue;
 }
 .footPrin {
     display: flex;
