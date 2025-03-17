@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labortario 11 Ejercicios 1 a 4</title>
+    <link rel="stylesheet" href="styles/style1.css">
+    <script src="scripts/ejercicio1.js"></script>
+    <script src="scripts/ejercicio2.js"></script>
+    <script src="scripts/ejercicio3.js"></script>
+    <script src="scripts/ejercicio4.js"></script>
+</head>
+<body>
+    <div>
+        <header>
+            <h1>
+                Verificación de calificaciones
+            </h1>
+        </header>
+    </div>
+    <div class="calificar">
+        <h3>Validar calificaciones</h3><br><br>
+        <label class="ingNum" for="calif">Ingrese un número:</label>
+        <input class="numIngreso" type="number" name="ingresar" id="calif" min="0" max="100"><br><br>
+        <table class="resultadoEval">
+            <tr>
+                <th class="titulo">
+                    Resultado:
+                </th>
+                <td id="resultado" class="valor">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button id="limpiar" class="rst">limpiar</button><br>
+    </div>
+    <hr>
+    <div>
+        <header>
+            <h1>
+                Determinar número Par o Impar
+            </h1>
+        </header>
+    </div>
+    <div class="calificar">
+        <h3>Validar Número</h3><br><br>
+        <label class="ingNum" for="parImpar">Ingrese un número:</label>
+        <input id="parImpar"  class="numIngreso" type="number" name="ingresar" min="0"><br><br>
+        <table class="resultadoEval">
+            <tr>
+                <th class="titulo">
+                    Resultado:
+                </th>
+                <td id="numParImp" class="valor">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button id="rst" class="rst">limpiar</button><br>
+    </div>
+    <hr>
+    <div>
+        <header>
+            <h1>
+                Evaluación de descuentos
+            </h1>
+        </header>
+    </div>
+    <div class="calificar">
+        <h3>Validar descuentos</h3><br><br>
+        <label class="ingNum" for="valComp">Ingrese el monto total de su compra:</label>
+        <input id="valComp"  class="numIngreso" type="number" name="ingresar" min="0"><br><br>
+        <table class="resultadoEval">
+            <tr>
+                <th class="titulo">
+                    Descuento:
+                </th>
+                <td id="desc" class="valor descApl">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button id="clear" class="rst">limpiar</button><br>
+    </div>
+    <hr>
+    <div>
+        <header>
+            <h1>
+                Adivina el número
+            </h1>
+        </header>
+    </div>
+    <div class="calificar">
+        <h3>Juega a adivinar el número</h3><br><br>
+        <label class="ingNum" for="aleatorio">Ingrese un número:</label>
+        <input id="aleatorio"  class="numIngreso" type="number" name="ingresar" min="1" max="10"><br><br>
+        <table class="resultadoEval">
+            <tr>
+                <th class="titulo">
+                    Respuesta:
+                </th>
+                <td id="correcto" class="valor descApl">
+                </td>
+            </tr>
+        </table>
+        <h4 class="titulo">Intentos: <span id="cuenta"></span></h4>
+        <br>
+        <button id="limprst" class="rst">limpiar</button><br>
+    </div>
+    <hr>
+</body>
+</html>

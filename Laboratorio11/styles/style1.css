@@ -1,0 +1,47 @@
+body {
+    background-color: gray;
+}
+.calificar {
+    border: outset beige;
+    border-radius: 0.3vw;
+    background-color: coral;
+    padding: 0.2vw;
+    margin: 0.5vw;
+    border-radius: 0.5vw;
+}
+.ingNum, .numIngreso {
+    border-style: inset;
+    background-color: aliceblue;
+}
+.ingNum {
+    font-weight: bold;
+    width: 5vw;
+}
+.numIngreso {
+    width: 3vw;
+}
+.resultadoEval {
+    border-collapse: collapse;
+}
+.titulo, .valor {
+    border-style: inset;
+    background-color: aliceblue;
+}
+.titulo {
+    width: 6.2vw;
+    text-align: left;
+}
+.valor {
+    width: 17vw;
+}
+.rst {
+    background-color: wheat;
+    border: outset 0.3vw gray;
+    margin: 0.8vw;
+}
+.rst:hover {
+    cursor:pointer;
+}
+.descApl {
+    width: 20em;
+}
