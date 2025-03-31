@@ -10,11 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (parImp < min || isNaN(parImp)) {
             validar.innerText = `Ingrese un número mayor que ${min}`;
-        } else if (parImp % 2 == 0) {
-            validar.innerText = "El número es par";
-        } else {
-            validar.innerText = "El número es impar";
-        }
+        } 
+        validar.innerText = esParImpar(parImp) ? "El número es par" : "El número es impar";
     })
 
     let botonLimp = document.getElementById("rst");
@@ -25,3 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         numero.focus();
     });
 });
+
+function esParImpar (numero) {
+    return numero % 2 === 0;
+}

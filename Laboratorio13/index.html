@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Estilo CSS</title>
+    <link rel="stylesheet" href="styles/style1.css">
+</head>
+
+<body>
+    <div class="conten-principal">
+        <div class="cont-calc">
+            <div class=" pantalla">
+                <input type="text" name="pantal" id="pantalla" disabled>
+            </div><br>
+            <div class="cont-botones">
+                <div class="numeros">
+                    <div class="calc-botones linea">
+                        <button id="siete" onclick="validarId(id)" class="boton numero" type="button">7</button>
+                        <button id="ocho" onclick="validarId(id)" class="boton numero" type="button">8</button>
+                        <button id="nueve" onclick="validarId(id)" class="boton numero" type="button">9</button>
+                    </div>
+                    <div class="calc-botones linea">
+                        <button id="cuatro" onclick="validarId(id)" class="boton numero" type="button">4</button>
+                        <button id="cinco" onclick="validarId(id)" class="boton numero" type="button">5</button>
+                        <button id="seis" onclick="validarId(id)" class="boton numero" type="button">6</button>
+                    </div>
+                    <div class="calc-botones linea">
+                        <button id="uno" onclick="validarId(id)" class="boton numero" type="button">1</button>
+                        <button id="dos" onclick="validarId(id)" class="boton numero" type="button">2</button>
+                        <button id="tres" onclick="validarId(id)" class="boton numero" type="button">3</button>
+                    </div>
+                    <div class="calc-botones linea">
+                        <button id="cero" onclick="validarId(id)" class="boton numero" type="button">0</button>
+                        <button id="limpiar" onclick="limpiarPantalla()" class="boton rst" type="reset">C</button>
+                        <button id="igual" onclick="calcularResultado()" class="boton igl" type="button">=</button>
+                    </div>
+                </div>
+                <div class="operaciones linea">
+                    <button id="suma" onclick="validarId(id)" class="boton operacion" type="button">&#43</button>
+                    <button id="resta" onclick="validarId(id)" class="boton operacion" type="button">&#8722</button>
+                    <button id="multiplicacion" onclick="validarId(id)" class="boton operacion" type="button">x</button>
+                    <button id="division" onclick="validarId(id)" class="boton operacion" type="button">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/calculadoraEstilo.js"></script>
+</body>
+
+</html>

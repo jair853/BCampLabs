@@ -1,0 +1,70 @@
+.conten-principal {
+    background-color: rgb(103, 97, 104);
+    height:43vw;
+}
+.cont-calc {
+    width: 20vmax;
+    height: 25vmax;
+    border: ridge 0.3vw aliceblue;
+    border-radius: 0.8vw;
+    box-shadow: 0.5vmax 0.5vmax;
+    position: relative;
+    left: 40vw;
+    top: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: rgb(235, 97, 47);
+}
+#pantalla {
+    width:95%;
+    height: 5vmax;
+    border: inset 0.2vw black;
+    border-radius: 0.8vw;
+    margin-top: 0.3vmax;
+    box-shadow: 0.1vmax 0.1vmax;
+    position: relative;
+    left: 0.1vmax;
+    background-color: white;
+    font-size: x-large;
+}
+
+.cont-botones {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    padding-left: 0.4vmax;
+    padding-top: 0.3vmax;
+}
+.numeros {
+    display: grid;
+    row-gap: 0.2vw;
+}
+.operaciones {
+    display: grid;
+    row-gap: 0.2vw;
+}
+
+.boton {
+    width: 4.5vmax;
+    height: 4vmax;
+    border: outset 0.2vmax rgb(52, 150, 120);
+    border-radius: 0.9vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+.boton:hover {
+    cursor: pointer;
+    background-color: rgb(87, 83, 79);
+}
+.rst {
+    background-color: rgb(248, 9, 9);
+}
+.operacion {
+    background-color: rgb(98, 204, 230);
+}
+#igual {
+    background-color: rgb(4, 167, 4);
+}
+#igual:hover {
+    background-color: rgb(87, 83, 79);
+}
