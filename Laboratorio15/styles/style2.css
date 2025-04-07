@@ -26,6 +26,11 @@
     padding: 0.6vw;
     font-size: var(--fontLength);
 }
+.main-cont > section > div > article {
+    text-align: center;
+    padding: var(--fontLength);
+    font-size: var(--fontLength);
+}
 .main-cont > section > div > button {
     background-color: var(--colorSect);
     width: 15vw;
