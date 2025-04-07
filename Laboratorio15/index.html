@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style1.css">
+    <link rel="stylesheet" href="styles/style2.css">
+    <title>Secciones</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="#home">Inicio</a>
+            <div>
+                <button>Secciones</button>
+                <div>
+                    <a href="#sec1">Sección 1</a>
+                    <a href="#sec2">Sección 2</a>
+                    <a href="#sec3">Sección 3</a>
+                    <a href="#sec4">Sección 4</a>
+                </div>
+            </div>
+            <a href="#contac">Contacto</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li>Secciones
+                    <div>
+                        <a href="#sec1">Sección 1</a>
+                        <a href="#sec2">Sección 2</a>
+                        <a href="#sec3">Sección 3</a>
+                        <a href="#sec4">Sección 4</a>
+                    </div>
+                </li>
+                <li><a href="#contac">Contacto</a></li>
+            </ul>
+            <button id="nav-tog" aria-label="Toggle Navigation">
+                <svg height="45" width="45" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="-5" y1="5" x2="13" y2="5" style="stroke:rgb(0, 0, 0); stroke-width:1.5" />
+                    <line x1="-5" y1="10" x2="10" y2="10" style="stroke:rgb(0, 0, 0); stroke-width:1.5" />
+                    <line x1="-5" y1="15" x2="13" y2="15" style="stroke:rgb(0, 0, 0); stroke-width:1.5" />
+                </svg>
+            </button>
+        </nav>
+        <script src="scripts/events.js"></script>
+    </header>
+    <div id="home" class="main-cont">
+        <section>
+            <div id="sec1">
+                <h2>Sección 1</h2>
+                <p>Primera Sección</p>
+                <button onclick="mostrarMensaje(event, '1')">Mensaje sección 1</button>
+            </div>
+            <div id="sec2">
+                <h2>Sección 2</h2>
+                <p>Segunda Sección</p>
+                <button onclick="mostrarMensaje(event, '2')">Mensaje sección 2</button>
+            </div>
+            <div id="sec3">
+                <h2>Sección 3</h2>
+                <p>Tercera Sección</p>
+                <button onclick="mostrarMensaje(event, '3')">Mensaje sección 3</button>
+            </div>
+            <div id="sec4">
+                <h2>Sección 4</h2>
+                <p>Cuarta Sección</p>
+                <button onclick="mostrarMensaje(event, '4')">Mensaje sección 4</button>
+            </div>
+        </section>
+        <footer id="contac">
+            <center class="cent"><span>&copy;Derechos reservados 2025. Jair Socarrás</span></center>
+        </footer>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

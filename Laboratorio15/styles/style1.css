@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(203, 205, 206);
+    display: block;
+}
+header {
+    width: 100%;
+    z-index: 1;
+    height: 10%;
+    display: block;
+    position: fixed;
+    margin: 0em 1em 1em 0em;
+    padding: 0.2em 1em 0.6em 0.6em;
+    background-color: rgb(20, 68, 71);
+    background-image: linear-gradient(rgb(20, 68, 71), rgb(4, 94, 102));
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+a:hover, button:hover, 
+header > nav > ul > li:hover {
+    color: rgb(12, 11, 114);
+    cursor: pointer;
+}
+header > div > a, header > div > div {
+    margin: 2% 1% 0% 3%;
+    width: 15vw;
+    border: solid 0.1em rgb(104, 30, 30);
+    background-color: rgb(84, 92, 92);
+    float: left;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(rgb(84, 92, 92), rgb(66, 49, 49));
+}
+header > div > a {
+    border: outset 0.2em rgb(124, 25, 25);
+}
+header > div > div > button {
+    background-color: rgb(84, 92, 92);
+    background-image: linear-gradient(rgb(84, 92, 92), rgb(66, 49, 49));
+    border: outset 0.15em rgb(124, 25, 25);
+    color: white;
+    padding: 0;
+    width: 100%;
+}
+header > div > a, 
+header > div > div > button {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding: 0.1em;
+}
+header > div > div > div {
+    background-color: rgb(119, 111, 114);
+    display: none;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    padding: 0em 0em 0.3em 0em;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 0.9em;
+    box-shadow: 0.3em 0.3em rgb(165, 163, 163);
+}
+header > div > div > div > a {
+    float: none;
+    display: block;
+    padding: 0.2em 0.4em 0em 0em;
+}
+header > div > div:hover > div {
+    display: block;
+}
+header > nav {
+    display: block;
+}
+header > nav > ul {
+    margin:0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+header > nav > ul, 
+#nav-tog {
+    display: none;
+    float:left;
+    position: relative;
+}
+header > nav > ul > li {
+    background-color: rgb(119, 111, 114);
+    background-image: linear-gradient(rgb(84, 92, 92), rgb(66, 49, 49));
+    font-family:'Times New Roman', Times, serif;
+    font-size: 0.1em;
+    float: left;
+    position: relative;
+    margin: 0vw 0.3vw 0vw 0vw;
+    padding: 0em;
+    box-sizing: border-box;
+    border: outset 0.4em rgb(124, 25, 25);
+    width: 17vw;
+    text-align: center;
+    color: white;
+}
+header > nav > ul > li > div {
+    position:absolute;
+    box-shadow: 0.35em 0.35em rgb(165, 163, 163);
+}
+header > nav > ul > li > div > a {
+    background-color: rgb(119, 111, 114);
+    display: none;
+    width: 100%;
+    padding: 0.1em 0.3em 5em 0.3em;
+    margin: 0em em 0.3em -2em;
+    float: none;
+    overflow: hidden;
+    font-family:'Times New Roman', Times, serif;
+    font-size:0.1em;
+}
+header > nav > ul > li:hover {
+    cursor: pointer;
+}
+header > nav > ul > li:hover > div > a {
+    display: block;
+}
+#nav-tog {
+    background-color: rgb(173, 173, 175);
+}
+.toggle-open {
+    display: block;
+}
+@media screen and (max-width: 768px) {
+    #nav-tog {
+        display: block;
+        width: 2em;
+        height: 2em;
+    }
+    header {
+        height: 14%;
+    }
+    header > div > a, header > div > div  {
+        display: none;
+    }
+    header > nav {
+        margin-top: 0%;
+    }
+    header > nav > ul {
+        margin: 6% 0% 0% 0%;
+    }
+}
+@media screen and (min-width:400px) {
+    header > nav > ul > li {
+        display: none;
+    }
+}
+
