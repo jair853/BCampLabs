@@ -28,6 +28,10 @@
     padding: var(--fontLength);
     font-size: var(--fontLength);
 }
+span {
+    font-family: cursive;
+    font-size: xx-large;
+}
 .main-cont > section > button {
     background-color: var(--colorSect);
     width: 15vw;
