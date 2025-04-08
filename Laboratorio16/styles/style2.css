@@ -1,0 +1,70 @@
+:root {
+    --len: 30px;
+    --clr: color-mix(in oklab, #45afb2 80%, #45a);
+}
+h2 {
+    text-align: center;
+    color: white;
+}
+.formulario {
+    width: 30vw;
+    margin: 0 auto;
+    padding: 1vw;
+    border: ridge 0.5vw gainsboro;
+    border-radius: 0.8vw;
+    box-shadow: 0.8vw 0.9vw 2vw rgba(0,0,0, 0.3);
+    background-color: gray;
+}
+.formulario label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.formulario input {
+    width: 13vw;
+    border: inset 0.2vw gray;
+    margin: 0.3vw 0vw 0vw 2vw;
+    padding: 0vw 0vw 0vw 0vw;
+    float: right;
+}
+.formulario label::after {
+    content: "*";
+    color: rgb(139, 47, 47);
+}
+span {
+    color: rgb(139, 47, 47);
+    font-size: 120%;
+}
+input + hr, footer + hr, img + hr {
+    border: none;
+}
+
+.formulario input[type=submit]{
+    width: 7vw;
+    border: outset 0.2vw rgb(99, 97, 97);
+    border-radius: 0.5vw;
+    float:inline-start;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.formulario input:hover {
+    cursor: pointer;
+}
+.img1 {    
+    border-radius: calc(var(--len) * 0.5);
+    display: block;
+    margin: var(--len) * 0.3 auto;
+    border: calc(var(--len) * 0.08) solid var(--clr);
+}
+footer h3:nth-child(2) {
+    color: aliceblue;
+    margin: 0.8vw;
+}
+
+footer div > p {
+    font-size: 1.3vw;
+    color: aliceblue;
+    padding-left: 1vw;
+}
+footer div h2 {
+    color: aliceblue;
+}
