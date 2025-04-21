@@ -1,0 +1,8 @@
+USE Actividad2;
+
+CREATE TABLE IF NOT EXISTS Estudiantes (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50)  NOT NULL,
+    edad INT NOT NULL,
+    ciudad VARCHAR(50) NOT NULL
+);
