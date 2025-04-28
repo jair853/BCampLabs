@@ -41,12 +41,12 @@ def crearMenu():
                 ingredientes = input("Ingrese lista de ingredientes: ")
                 if isinstance(ingredientes, str):
                     ingredientes = [i.strip() for i in ingredientes.split(",")]
-                    ingredientes = [i.capitalize() for i in ingredientes]
+                    ingredientes = [i.title() for i in ingredientes]
                 categoria[nombre][presentacion]["ingredientes"] = ingredientes
                 adicionales = input("Ingrese ingredientes adicionales especiales: ")
                 if isinstance(adicionales, str):
                     adicionales = [i.strip() for i in adicionales.split(",")]
-                    adicionales = [i.capitalize() for i in adicionales]
+                    adicionales = [i.title() for i in adicionales]
                 categoria[nombre][presentacion]["adicionales"] = adicionales
                 precio = float(input("Ingrese el precio del producto para la presentación escogida: ") or 0)
                 

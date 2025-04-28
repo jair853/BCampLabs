@@ -4,4 +4,7 @@ c = a + b
 print("la suma es:", c)
 d = a * b
 print("la multiplicación es:", d)
-print(f"el resultado de la suma es: {c}")
+e = a - b
+print("la resta es:", e)
+x = a / b if b!= 0 else "no se puede dividir por 0"
+print(f"la división es: {x:.2f}")

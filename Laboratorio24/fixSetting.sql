@@ -1,0 +1,13 @@
+-- ALTER TABLE libros
+-- ADD CONSTRAINT fk_libros_autores
+-- FOREIGN KEY (Autor_ID) REFERENCES autores(id)
+-- ON DELETE CASCADE
+-- ON UPDATE CASCADE;
+-- SELECT CONSTRAINT_NAME
+-- FROM information_schema.KEY_COLUMN_USAGE
+-- WHERE TABLE_NAME = 'libros'
+--   AND COLUMN_NAME = 'Autor_ID';
+-- ALTER Table libros
+-- -- modify COLUMN Autor_ID bigint unsigned NOT NULL;
+-- SHOW CREATE TABLE libros;
+-- SHOW CREATE TABLE autores;

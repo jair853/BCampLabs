@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS empleados (
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    nombres VARCHAR(255) NOT NULL,
+    apellidos VARCHAR(255) NOT NULL,
+    puesto VARCHAR(255) NOT NULL,
+    salario VARCHAR(255) NOT NULL,
+    edad INT(53) NOT NULL,
+    celular DOUBLE NOT NULL,
+    direccion VARCHAR(255) NOT NULL
+);
